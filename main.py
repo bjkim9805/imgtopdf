@@ -20,7 +20,7 @@ while (True):
             img_path = os.path.join(inp, img_file)
             img = Image.open(img_path)
             pdf_bytes.append(img_path)
-            print(f"Converted {img_file}")
+            print(f"{img_file}")
         # Get output pdf file name. If the folder name is "images", the output file will be "images.pdf"
         pdf_path = os.path.join(inp, os.path.basename(inp) + ".pdf")
         # Write all bytes to one pdf file
